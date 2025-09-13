@@ -1,0 +1,63 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #dff6ff, #a6e3ff);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Center container */
+.container {
+  text-align: center;
+}
+
+/* Ice Font Effect */
+.ice-text {
+  font-size: 8rem;
+  font-weight: 900;
+  color: #e0f7ff;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+
+  /* Frosty look */
+  text-shadow:
+    0 0 5px #a6e3ff,
+    0 0 10px #89d6ff,
+    0 0 20px #5ccfff,
+    0 0 40px #33b5ff;
+  
+  animation: shimmer 3s infinite linear;
+}
+
+/* Light shimmer animation */
+@keyframes shimmer {
+  0% {
+    text-shadow:
+      0 0 5px #a6e3ff,
+      0 0 10px #89d6ff,
+      0 0 20px #5ccfff,
+      0 0 40px #33b5ff;
+  }
+  50% {
+    text-shadow:
+      0 0 10px #ffffff,
+      0 0 20px #a6e3ff,
+      0 0 30px #89d6ff,
+      0 0 60px #33b5ff;
+  }
+  100% {
+    text-shadow:
+      0 0 5px #a6e3ff,
+      0 0 10px #89d6ff,
+      0 0 20px #5ccfff,
+      0 0 40px #33b5ff;
+  }
+}
