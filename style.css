@@ -8,56 +8,58 @@
 body {
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background: linear-gradient(135deg, #dff6ff, #a6e3ff);
   font-family: 'Arial', sans-serif;
 }
 
-/* Center container */
-.container {
+/* Frosted glass card behind text */
+.card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem 2rem;
   text-align: center;
+  max-width: 90%;
 }
 
-/* Ice Font Effect */
+/* Ice-style text */
 .ice-text {
-  font-size: 8rem;
+  font-size: 4rem;
   font-weight: 900;
   color: #e0f7ff;
   text-transform: uppercase;
-  letter-spacing: 8px;
-
-  /* Frosty look */
+  letter-spacing: 6px;
   text-shadow:
-    0 0 5px #a6e3ff,
-    0 0 10px #89d6ff,
-    0 0 20px #5ccfff,
-    0 0 40px #33b5ff;
-  
+    0 0 3px #a6e3ff,
+    0 0 6px #89d6ff,
+    0 0 12px #5ccfff,
+    0 0 24px #33b5ff;
   animation: shimmer 3s infinite linear;
 }
 
-/* Light shimmer animation */
+/* Shimmer animation */
 @keyframes shimmer {
   0% {
     text-shadow:
-      0 0 5px #a6e3ff,
-      0 0 10px #89d6ff,
-      0 0 20px #5ccfff,
-      0 0 40px #33b5ff;
+      0 0 3px #a6e3ff,
+      0 0 6px #89d6ff,
+      0 0 12px #5ccfff,
+      0 0 24px #33b5ff;
   }
   50% {
     text-shadow:
-      0 0 10px #ffffff,
-      0 0 20px #a6e3ff,
-      0 0 30px #89d6ff,
-      0 0 60px #33b5ff;
+      0 0 6px #ffffff,
+      0 0 12px #a6e3ff,
+      0 0 18px #89d6ff,
+      0 0 36px #33b5ff;
   }
   100% {
     text-shadow:
-      0 0 5px #a6e3ff,
-      0 0 10px #89d6ff,
-      0 0 20px #5ccfff,
-      0 0 40px #33b5ff;
+      0 0 3px #a6e3ff,
+      0 0 6px #89d6ff,
+      0 0 12px #5ccfff,
+      0 0 24px #33b5ff;
   }
 }
